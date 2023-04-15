@@ -1,0 +1,154 @@
+/*.dg .main {
+	background-color: blue;
+	color:white;
+	font-size: 12px;
+}
+#gui ul li{
+	background-color: hotpink;
+	padding: 10px;
+}
+#gui div:first-of-type{
+	background: yellow;
+/*  width:1px;*/
+
+@font-face{
+	font-family: biome;
+	src: url('assets/biome.ttf');
+}
+
+body {
+	margin: 0;
+	background: #000;
+}
+#nv {
+	position: fixed;
+	top: 0;	left: 0;
+}
+*{
+	font-family: biome;
+}
+header {
+	display: block;
+	position: fixed;
+	width: 100vw;
+	height: 100px;
+	background: #FFFFFF11;
+	backdrop-filter: blur(50px);
+	z-index: 1;
+	color: #FFF;
+	padding-left: 100px;
+	padding-top: 20px;
+	box-sizing: border-box;
+}
+header h1{
+	display: inline;
+	margin-top: 40px;
+}
+
+#file-upload {
+	width: 100%;
+	height: 100%;
+  color: #FFF;
+}
+#file-upload input{
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.upload-button {
+	float: right;
+	background: transparent;
+	border: none;
+  margin-right: 80px;
+}
+
+.overlay{
+/*	display: none;*/
+	position: fixed;
+	top: 50%; left: 50%;
+	width: 1200px; height: 400px;
+	transform: translate(-50%,-50%);
+	background: #FFFFFF11;
+	backdrop-filter: blur(50px);
+	color: #FFF;
+	border-radius: 40px;
+	z-index: 100;
+}
+.overlay ul{
+	margin-left: 300px;
+	margin-top: 60px;
+}
+.overlay ul li{
+	font-size: 16px;
+	padding: 10px;
+}
+.overlay h2{
+	margin-top: 40px;
+}
+
+:root {
+  --tp-base-background-color: transparent;
+}
+.tp-dfwv {
+/*	background: linear-gradient(to bottom, #FFFFFF11, #FFFFFF33 50%, #FFFFFF11);*/
+	margin-right: 80px;
+	margin-top: 130px;
+	max-height: 75%;
+	width: 400px;
+	overflow-y: auto;
+	backdrop-filter: blur(5px);
+	z-index: 2;
+}
+.tp-dfwv::-webkit-scrollbar{
+	width: 2px;
+}
+.tp-dfwv::-webkit-scrollbar-track{
+	background: transparent;
+}
+.tp-dfwv::-webkit-scrollbar-thumb{
+	background: #FFFFFF77;
+	border-radius: 60px;
+}
+.tp-dfwv::-webkit-scrollbar-thumb:hover{
+	background: #FFFFFFFF;
+	border-radius: 60px;
+}
+
+.tp-lblv_l, .tp-fldv_t, .tp-btnv_t{
+	font-size: 14px;
+}
+.tp-lblv_l{
+	padding: 2px;
+}
+
+@media (max-width: 768px) {
+	.tp-dfwv {
+		width: 300px;
+		margin-right: 0;
+		margin-top: 120px;
+	}
+	.overlay{
+		width: 600px;
+	}
+	.overlay ul{
+		margin: 0;
+	}
+}
+@media (max-width: 576px) {
+	.tp-dfwv {
+		width: 90%;
+		margin: auto;
+		margin-top: 120px;
+		margin-bottom: 20px;
+	}
+	header{
+		padding-left: 10px;
+	}
+	.overlay{
+		width: 400px;
+	}
+	.overlay ul{
+		margin: 0;
+	}
+}

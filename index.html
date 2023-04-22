@@ -3,22 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>GLB Model Viewer</title>
+	<title>GLTF Model Viewer</title>
 </head>
 <body>
 	<header>
-		<h1>GLB Model Viewer</h1>
-		<button class="upload-button">
-			<img src="assets/upload.png" alt="Upload Model">
+		<h1>GLTF Model Viewer</h1>
+		<button id="upload-button" onclick="javascript:document.querySelector('.overlay').style.display = 'flex';document.querySelector('.overlay').classList.add('animate');">
+			<img src="assets/upload.svg" alt="Upload Model" width="64px">
 		</button>
 	</header>
 	<div class='overlay'>
-		<div id='file-upload'>
-			<center><span>Click to upload file</span></center>
-			<input id="model-file" type="file">
-		</div>
+		<span>Click to upload file<br><center>-or-<br><center>Drop your file here</span>
+		<input id="gltf-file" type="file">
+		<button id="close-button" onclick="javascript:document.querySelector('.overlay').style.display = 'none';">&times;</button>
 	</div>
-	<canvas id="nv"></canvas>
+	<canvas id="here-lies-the-model"></canvas>
 	<script type="module" src="/main.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css" defer>
 </body>

@@ -22,4 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# I am personally offended that vite did not add gitignore for sublime text 💔
+
 models/
